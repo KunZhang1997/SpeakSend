@@ -1,0 +1,68 @@
+# NOTICE — SpeakSend runtime / third-party components
+
+SpeakSend’s Swift Package (`Package.swift`) links Apple system frameworks.
+原文富文本加粗/斜体由应用内 `SpeakSendMarkdownEditorView` 实现，不捆绑第三方编辑器 SDK。
+
+The distribution package does not bundle Whisper, Ollama, or model weights.
+SpeakSend first reuses compatible user/system runtimes. It downloads a managed
+runtime only after the user explicitly requests a corresponding local model.
+
+| Component | Role | Typical location / source |
+|-----------|------|---------------------------|
+| Apple Speech / AVFoundation | Default on-device dictation | System frameworks |
+| whisper.cpp `whisper-cli`, ggml, LLVM OpenMP | Optional local Whisper delivery | On-demand runtime under `~/Library/Application Support/SpeakSend/runtime/whisper/` plus user-requested `~/.cache/whisper-models/` weights |
+| Qwen3-ASR / MLX Audio | Optional local ASR | User-requested weights under `~/models/Qwen3-ASR-*`; on supported Macs, an on-demand managed runtime under `~/Library/Application Support/SpeakSend/runtime/qwen/`; legacy `~/venvs/qwen3-asr/` remains compatible |
+| Ollama (local HTTP) | Optional structure / model catalog | Existing loopback service/system runtime, or user-triggered managed v0.33.1 runtime under `~/Library/Application Support/SpeakSend/runtime/ollama/v0.33.1/`; models remain in `~/.ollama` |
+
+whisper.cpp and ggml are licensed under the MIT License. LLVM OpenMP is licensed
+under the Apache License 2.0 with LLVM Exceptions. Their license texts are saved
+beside the managed runtime when the user requests that runtime.
+
+Sources:
+https://github.com/ggml-org/whisper.cpp
+https://github.com/ggml-org/ggml
+https://github.com/llvm/llvm-project/tree/main/openmp
+
+The managed Qwen runtime is downloaded only after the user explicitly requests
+a Qwen model. It uses pinned uv, CPython, MLX, mlx-audio, and Hugging Face Hub
+components. Exact package versions and notices are written beside that runtime;
+the DMG itself does not bundle them. Existing user-managed Qwen environments
+remain outside SpeakSend's ownership.
+
+Sources and licenses:
+https://github.com/astral-sh/uv (Apache-2.0 OR MIT)
+https://www.python.org/psf/license/ (Python Software Foundation License)
+https://github.com/ml-explore/mlx (MIT)
+https://github.com/Blaizzy/mlx-audio (MIT)
+https://github.com/huggingface/huggingface_hub (Apache-2.0)
+
+Ollama is Copyright Ollama contributors and is licensed under the MIT License:
+https://github.com/ollama/ollama/blob/main/LICENSE
+
+MIT License
+
+Copyright (c) Ollama
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Pinned official release asset:
+https://github.com/ollama/ollama/releases/expanded_assets/v0.33.1
+
+`vendor/` trees (if present in the repo) are **reference / research only** and are
+**not** the shipping product package identity (`SpeakSend` / `com.speaksend.app`).

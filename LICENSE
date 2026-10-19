@@ -1,0 +1,41 @@
+SpeakSend License (Source-Available, No Derivatives)
+SpeakSend 许可协议（源码可见，禁止修改）
+
+Copyright (c) 2026 KunZhang1997. All rights reserved.
+版权所有 (c) 2026 KunZhang1997，保留所有权利。
+
+1. 允许的用途 / What you MAY do
+   - 免费下载、安装并使用 SpeakSend 应用（个人或工作使用均可）。
+     Download, install, and use the SpeakSend app free of charge.
+   - 阅读本仓库的源代码，用于学习、审查安全与隐私。
+     Read the source code in this repository to learn from it or audit its security and privacy.
+   - 通过 GitHub Issues 提交问题报告、功能建议和反馈。
+     Submit bug reports, feature requests, and feedback through GitHub Issues.
+
+2. 禁止的用途 / What you may NOT do (without prior written permission)
+   - 修改本软件或其源代码，或基于它制作衍生作品。
+     Modify the software or its source code, or create derivative works based on it.
+   - 复制、再发布、转售、再许可本软件或其源代码的全部或部分。
+     Copy, redistribute, sell, or sublicense all or part of the software or source code.
+   - 将本软件或其源代码用于商业产品或服务。
+     Use the software or its source code in any commercial product or service.
+   - 移除或修改本许可、版权声明及 NOTICE 文件。
+     Remove or alter this license, copyright notices, or the NOTICE file.
+
+3. 反馈 / Feedback
+   你提交的建议和反馈，作者可以自由采纳并用于改进 SpeakSend，无需支付报酬。
+   本仓库不接受外部代码贡献（Pull Request）。
+   Suggestions you submit may be used freely by the author to improve SpeakSend.
+   External code contributions (pull requests) are not accepted.
+
+4. 第三方组件 / Third-party components
+   SpeakSend 按需使用的第三方开源组件仍适用其各自的许可证，详见 NOTICE 文件。
+   Third-party open-source components used by SpeakSend remain under their own licenses; see NOTICE.
+
+5. 免责声明 / Disclaimer
+   本软件按"原样"提供，不附带任何明示或暗示的担保。作者不对使用本软件造成的任何损失负责。
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. THE AUTHOR IS NOT LIABLE
+   FOR ANY DAMAGES ARISING FROM ITS USE.
+
+如需上述禁止用途的授权，请通过 GitHub Issues 联系作者。
+For permission beyond these terms, contact the author via GitHub Issues.
