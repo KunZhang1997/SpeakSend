@@ -6,22 +6,26 @@
 
 <p align="center"><a href="README.md">中文</a> | English</p>
 
-<p align="center">
-  <b>Stop typing. Start talking. Walk out of every meeting with the notes already written.</b><br>
-  Voice input for any Mac app, plus long-form speech-to-text
-</p>
+**SpeakSend is a voice typing and audio transcription app for macOS.** Use a keyboard shortcut to dictate into the app you're working in, record longer sessions, or import audio and video files. AI text organization is optional.
 
-<p align="center">
-  <a href="#-get-started-in-3-steps">Get started</a> ·
-  <a href="#-why-speaksend">Why SpeakSend</a> ·
-  <a href="#-faq">FAQ</a>
-</p>
+**[Download the Mac public test build (DMG)](https://github.com/KunZhang1997/SpeakSend/releases/latest)** · [Install and get started](#get-started) · [FAQ](#faq) · [Report an issue](https://github.com/KunZhang1997/SpeakSend/issues)
+
+| Before you install | Details |
+|---|---|
+| System requirement | **macOS 13 Ventura or later** |
+| Mac hardware | **Apple silicon and Intel Macs**; individual models have their own requirements |
+| Local Qwen3-ASR recognition | Requires **Apple silicon and macOS 14 or later** |
+| Current status | **0.0.1, free public testing; not yet officially released** |
+| Developer account | [KunZhang1997](https://github.com/KunZhang1997) |
+| Download | [GitHub Releases: download the DMG installer](https://github.com/KunZhang1997/SpeakSend/releases/latest); known issues and update notes are on that page |
+
+Models are not bundled with the installer. Downloads start only when you choose them. Once the local models and required runtime components are ready, select local speech recognition and local AI to process those tasks offline. When you use Apple Dictation, macOS determines whether it connects to the internet.
 
 ---
 
 Your thoughts move faster than your fingers. Replying to a message takes longer than it should, emails and docs turn into a slog, and after an hour-long meeting you spend another hour writing it up.
 
-**SpeakSend lets you just say it.** Anywhere you can type on your Mac, press one key, speak, and the words land right where your cursor is. For meetings, interviews and long voice notes that run for hours, it transcribes as you go. When you finish, it pulls out the decisions and action items, and the full transcript is always kept.
+**SpeakSend lets you talk through an idea, then check the text.** Start recording with a shortcut in a Mac text field. Once recognition finishes, the result can be pasted back where you started. Use longer recordings for meetings, interviews and voice notes, then organize the text into notes or action items when needed. The transcript is retained so you can review it.
 
 <p align="center">
   <img src="docs/images/en/overview.png" alt="SpeakSend at a glance">
@@ -29,11 +33,11 @@ Your thoughts move faster than your fingers. Replying to a message takes longer 
 
 ## ✨ Why SpeakSend
 
-- **⚡️ Faster than typing**: talk and get text instantly, without pecking at the keyboard.
-- **🎯 Works in any app**: chat, email, docs, your browser, AI chat boxes. You never have to switch to SpeakSend.
+- **⚡️ Speak instead of typing**: explain the context, your ideas and what you need, then review the recognized text before sending it.
+- **🎯 Dictate where you work**: use it in messages, email, documents, browser fields and AI chats. Cross-app shortcuts require Input Monitoring; automatic pasting requires Accessibility permission.
 - **⌨️ One key does it**: press `Fn` to start. Hold to talk, or tap to start and tap again to stop. You can change the shortcut anytime.
-- **🕐 Built for the long haul**: transcribe meetings that run for hours as they happen. If a job is interrupted, pick it up where you left off next time.
-- **📋 Minutes write themselves**: one click turns a recording into decisions, action items and discussion points. Click any point to jump back to that spot in the transcript.
+- **🕐 Record longer sessions**: transcribe meetings, interviews and personal voice notes as you record, and keep them in your history.
+- **📋 Organize text with AI**: configure an available AI model to turn the transcript into decisions, action items and discussion points, then check them against the transcript.
 - **📂 Old recordings, too**: drop in existing audio or video (WAV, MP3, M4A, MP4 and more), then transcribe and organize it the same way.
 - **🏷️ Knows your jargon**: add names, product terms and industry vocabulary to the hotword library for sharper cleanup and corrections.
 - **🔒 Privacy first**: choose speech and AI models that run entirely on your Mac, so your audio and text stay with you.
@@ -48,7 +52,7 @@ Put your cursor anywhere, press the shortcut and speak. The text goes straight i
 
 ### Meetings, interviews and lectures, transcribed live
 
-Keep recording while the full transcript grows, and see decisions and action items appear right beside it.
+Text appears as recorded segments are transcribed. With an available AI model configured and text organization enabled, you can also view extracted highlights. Check important names, numbers and decisions.
 
 <p align="center"><img src="docs/images/en/shot-02.png" alt="Meeting transcription"></p>
 <p align="center"><img src="docs/images/en/shot-03.png" alt="Live highlights"></p>
@@ -71,6 +75,8 @@ Choose the recognizer that fits your Mac, from built-in Apple Dictation to local
 
 <p align="center"><img src="docs/images/en/shot-06.png" alt="Offline transcription"></p>
 
+<a id="get-started"></a>
+
 ## 🚀 Get started in 3 steps
 
 1. **Install**: download the DMG from the [latest release](https://github.com/KunZhang1997/SpeakSend/releases/latest) and drag SpeakSend into Applications.
@@ -81,8 +87,10 @@ Choose the recognizer that fits your Mac, from built-in Apple Dictation to local
 
 - **Fully on-device if you want**: with local speech models (Whisper / Qwen3-ASR) and a local AI (Ollama), your audio and text never leave your Mac.
 - **Nothing forced on you**: the installer ships with no models. A model is only downloaded when you click "Download".
-- **Cloud is opt-in**: text is sent to an online AI service only if you add that service's endpoint yourself.
+- **Connectivity depends on your choices**: macOS determines whether Apple Dictation connects online. If you configure an online AI service, text is sent to that service for organization. With local models selected, those recognition and AI tasks run on your Mac.
 - **See what's stored**: the privacy page in Settings lists everything SpeakSend keeps on your Mac and how to clear each item.
+
+<a id="faq"></a>
 
 ## ❓ FAQ
 
@@ -98,7 +106,7 @@ Choose the recognizer that fits your Mac, from built-in Apple Dictation to local
 
 <details>
 <summary><b>Is my audio uploaded?</b></summary>
-<br>Recordings and transcripts are stored locally on your Mac. With local models, nothing leaves your machine. Text is sent to an online AI service only if you set one up yourself.
+<br>With local speech recognition and local AI selected, those tasks run on your Mac. When you use Apple Dictation, macOS determines whether it connects online. If you configure an online AI service, text is sent to that service for organization. See the privacy page in Settings for what is stored locally and how to clear it.
 </details>
 
 <details>
