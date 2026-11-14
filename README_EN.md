@@ -1,128 +1,96 @@
 <p align="center">
-  <img src="docs/images/icon.png" width="120" alt="SpeakSend">
+  <img src="docs/images/icon.png" width="112" alt="SpeakSend">
 </p>
 
-<h1 align="center">SpeakSend</h1>
+<h1 align="center">SpeakSend for macOS</h1>
 
-<p align="center"><a href="README.md">中文</a> | English</p>
+<p align="center">
+  <b>Turn Your Speaking Speed into Output Speed.</b><br>
+  The native macOS voice productivity workspace: instant cursor-level dictation in any app, write-and-record hybrid notes, headphone-friendly meeting capture with source-linked insights, and an automatic Idea Network.
+</p>
 
-**SpeakSend is a voice typing and audio transcription app for macOS.** Use a keyboard shortcut to dictate into the app you're working in, record longer sessions, or import audio and video files. AI text organization is optional.
+<p align="center">
+  <a href="https://github.com/KunZhang1997/SpeakSend/releases/download/v0.1.1/SpeakSend-0.1.1.dmg"><b>⬇️ Download SpeakSend 0.1.1 (Apple Silicon DMG · 11.7 MB)</b></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/KunZhang1997/SpeakSend/releases/tag/v0.1.1">Release Notes & SHA-256</a>
+  &nbsp;·&nbsp;
+  <a href="#pricing">Editions & Early-Bird Plan</a>
+  &nbsp;·&nbsp;
+  <a href="#get-started">Quick Start</a>
+  &nbsp;·&nbsp;
+  <a href="README.md">中文介绍</a>
+</p>
 
-**[Download the Mac public test build (DMG)](https://github.com/KunZhang1997/SpeakSend/releases/latest)** · [Install and get started](#get-started) · [FAQ](#faq) · [Report an issue](https://github.com/KunZhang1997/SpeakSend/issues)
-
-| Before you install | Details |
-|---|---|
-| System requirement | **macOS 13 Ventura or later** |
-| Mac hardware | **Apple silicon and Intel Macs**; individual models have their own requirements |
-| Local Qwen3-ASR recognition | Requires **Apple silicon and macOS 14 or later** |
-| Current status | **0.0.1, free public testing; not yet officially released** |
-| Developer account | [KunZhang1997](https://github.com/KunZhang1997) |
-| Download | [GitHub Releases: download the DMG installer](https://github.com/KunZhang1997/SpeakSend/releases/latest); known issues and update notes are on that page |
-
-Models are not bundled with the installer. Downloads start only when you choose them. Once the local models and required runtime components are ready, select local speech recognition and local AI to process those tasks offline. When you use Apple Dictation, macOS determines whether it connects to the internet.
+<p align="center">
+  <img src="docs/images/v0.1.1/hero-v011.png" alt="SpeakSend 0.1.1 — Native macOS Voice Productivity Workspace">
+</p>
 
 ---
 
-Your thoughts move faster than your fingers. Replying to a message takes longer than it should, emails and docs turn into a slog, and after an hour-long meeting you spend another hour writing it up.
+## Why Builders, Writers, and Teams Choose SpeakSend
 
-**SpeakSend lets you talk through an idea, then check the text.** Start recording with a shortcut in a Mac text field. Once recognition finishes, the result can be pasted back where you started. Use longer recordings for meetings, interviews and voice notes, then organize the text into notes or action items when needed. The transcript is retained so you can review it.
+Typing bottlenecks fast thinking. Two-hour online meetings take another hour to summarize. Worst of all, hundreds of voice memos end up buried in a "recording graveyard," never read again.
+
+Most tools only solve a fragment—either a fragile short-sentence dictation widget or a cloud meeting bot that produces vague, unverifiable summaries while charging by the minute. **Built natively in Swift (just 11.7 MB), SpeakSend connects instant voice input, structured meeting/note capture, and long-term knowledge compounding in one cohesive workspace:**
+
+- **⚡ Instant Voice Input Anywhere**: Press `Fn` (Hold-to-Talk or Click-to-Toggle) to dictate a quick reply in Slack/WeChat/Mail or a 500-word architectural prompt into **Cursor / Claude / ChatGPT**. Strict clean-up strips filler words without rewriting your meaning, backed by clipboard-collision protection and per-folder self-learning vocabulary.
+- **✍️ Write-and-Record Hybrid Notes**: Type a 3-line outline, click **Start Recording** right inside the note to speak the rest, or resume recording on past notes anytime. Smart auto-titling names untitled notes after insight extraction while strictly preserving manual titles.
+- **🎧 Headphone Meeting Capture + Source-Verified Insights**: Record **Microphone + Mac System Audio** simultaneously for Zoom/Teams calls or drag in existing audio/video (`WAV`, `MP3`, `M4A`, `MP4`). Dedicated **Meeting** (`Overview`, `Decisions`, `Action Items`, `Open Questions`) and **Personal Thinking** pipelines anchor every insight card directly to the exact source quote.
+- **🕸️ Idea Network (Zero Manual Tagging)**: Stop letting great spoken thoughts collect dust. SpeakSend automatically connects concepts and insights across your project folders over time—revealing cross-project bridges and chronological evolution with one-click jumps back to original transcripts.
+- **🔒 Multi-Engine Model Freedom & Plain Markdown Ownership**: Mix and match **Apple Dictation**, **Qwen3-ASR** (Apple Silicon MLX), or **Whisper** (Metal GPU) with local **Ollama** LLMs or your own **OpenAI-compatible Cloud API**. Run **100% offline on-device**, with every record saved as clean, standard `.md` files in `~/Desktop/SpeakSend Records` ready for Finder or Obsidian.
+
+---
+
+## Visual Tour
 
 <p align="center">
-  <img src="docs/images/en/overview.png" alt="SpeakSend at a glance">
+  <img src="docs/images/v0.1.1/showcase-01-global-input.png" alt="Global Voice Input in Any App">
+</p>
+<p align="center">
+  <img src="docs/images/v0.1.1/showcase-02-hybrid-notes.png" alt="Hybrid Write-and-Record Notes">
+</p>
+<p align="center">
+  <img src="docs/images/v0.1.1/showcase-03-meeting-insights.png" alt="System Audio Meeting Capture & Source-Linked Insights">
+</p>
+<p align="center">
+  <img src="docs/images/v0.1.1/showcase-04-idea-network.png" alt="Idea Network — Cross-Project Knowledge Graph">
+</p>
+<p align="center">
+  <img src="docs/images/v0.1.1/showcase-05-models-privacy.png" alt="Multi-Model Freedom & 100% Offline Privacy">
+</p>
+<p align="center">
+  <img src="docs/images/v0.1.1/showcase-06-native-markdown.png" alt="11.7 MB Native Swift & Plain Markdown Data Ownership">
 </p>
 
-## ✨ Why SpeakSend
+---
 
-- **⚡️ Speak instead of typing**: explain the context, your ideas and what you need, then review the recognized text before sending it.
-- **🎯 Dictate where you work**: use it in messages, email, documents, browser fields and AI chats. Cross-app shortcuts require Input Monitoring; automatic pasting requires Accessibility permission.
-- **⌨️ One key does it**: press `Fn` to start. Hold to talk, or tap to start and tap again to stop. You can change the shortcut anytime.
-- **🕐 Record longer sessions**: transcribe meetings, interviews and personal voice notes as you record, and keep them in your history.
-- **📋 Organize text with AI**: configure an available AI model to turn the transcript into decisions, action items and discussion points, then check them against the transcript.
-- **📂 Old recordings, too**: drop in existing audio or video (WAV, MP3, M4A, MP4 and more), then transcribe and organize it the same way.
-- **🏷️ Knows your jargon**: add names, product terms and industry vocabulary to the hotword library for sharper cleanup and corrections.
-- **🔒 Privacy first**: choose speech and AI models that run entirely on your Mac, so your audio and text stay with you.
+<a id="pricing"></a>
 
-## 🎬 Made for how you work
+## 💎 Editions & Commercial Roadmap (No Per-Minute Metered Traps)
 
-### Messages, email, docs and AI chats
+| Edition | Status | Highlights |
+|---|---|---|
+| **Early Access (`v0.1.1`)** | **Free Download Today** | Full access to global `Fn` voice input, hybrid notes, long-session workbench, file import, Idea Network, and free on-demand local ASR/LLM downloads |
+| **SpeakSend Pro (Lifetime License)** | **Early-Bird Coming Soon** | One-time purchase—no per-minute transcription anxiety. Unlocks unlimited local workflows, full Idea Network capabilities, and 1.x updates |
+| **Team / Offline Enterprise** | Contact via [Issues](https://github.com/KunZhang1997/SpeakSend/issues) | Dedicated air-gapped / 100% on-device deployment guidance and custom glossary workflows for legal, consulting, and R&D teams |
 
-Put your cursor anywhere, press the shortcut and speak. The text goes straight into the field you're in. With auto-paste on, you don't even need `⌘V`.
-
-<p align="center"><img src="docs/images/en/shot-01.png" alt="Voice dictation"></p>
-
-### Meetings, interviews and lectures, transcribed live
-
-Text appears as recorded segments are transcribed. With an available AI model configured and text organization enabled, you can also view extracted highlights. Check important names, numbers and decisions.
-
-<p align="center"><img src="docs/images/en/shot-02.png" alt="Meeting transcription"></p>
-<p align="center"><img src="docs/images/en/shot-03.png" alt="Live highlights"></p>
-
-### After the call: minutes and to-dos in one click
-
-You get a summary, the decisions and the next steps, and each one links back to the transcript so you can check it. Export the results as Markdown.
-
-<p align="center"><img src="docs/images/en/shot-04.png" alt="Minutes and action items"></p>
-
-### That recording on your phone: drop it in, get text
-
-Pick the spoken language (Chinese, English or mixed) and where to save it. When it's done, read the transcript or turn it into highlights.
-
-<p align="center"><img src="docs/images/en/shot-05.png" alt="Audio to text"></p>
-
-### Privacy-minded: pick your own local model
-
-Choose the recognizer that fits your Mac, from built-in Apple Dictation to local Whisper or Qwen3-ASR models. Transcription runs locally, and a local AI can write the minutes and to-dos too.
-
-<p align="center"><img src="docs/images/en/shot-06.png" alt="Offline transcription"></p>
+---
 
 <a id="get-started"></a>
 
-## 🚀 Get started in 3 steps
+## 🚀 Get Started in 3 Steps
 
-1. **Install**: download the DMG from the [latest release](https://github.com/KunZhang1997/SpeakSend/releases/latest) and drag SpeakSend into Applications.
-2. **Grant permissions**: on first launch, allow **Microphone** and **Speech Recognition**. To use the shortcut in other apps and auto-paste, also enable **Input Monitoring** and **Accessibility**.
-3. **Press `Fn` and talk**: speak into any text field and your words appear. For a long meeting, click "Start Recording" or "Import File" on the home screen.
+1. **Install**: Download **[SpeakSend-0.1.1.dmg](https://github.com/KunZhang1997/SpeakSend/releases/download/v0.1.1/SpeakSend-0.1.1.dmg)** and drag `SpeakSend` into `Applications` (existing users can drag-and-replace directly—all records, folders, and downloaded models remain intact).
+2. **Grant Permissions**: Allow **Microphone** and **Speech Recognition** on first launch. Enable **Input Monitoring** (for global shortcuts across apps) and **Accessibility** (for automatic paste-back; falls back to clipboard copy if disabled).
+3. **Press `Fn` & Speak**: Dictate directly into any focused text field, or open the main workspace to record meetings, write hybrid notes, import media, and explore your **Idea Network**.
 
-## 🔒 Your voice stays yours
-
-- **Fully on-device if you want**: with local speech models (Whisper / Qwen3-ASR) and a local AI (Ollama), your audio and text never leave your Mac.
-- **Nothing forced on you**: the installer ships with no models. A model is only downloaded when you click "Download".
-- **Connectivity depends on your choices**: macOS determines whether Apple Dictation connects online. If you configure an online AI service, text is sent to that service for organization. With local models selected, those recognition and AI tasks run on your Mac.
-- **See what's stored**: the privacy page in Settings lists everything SpeakSend keeps on your Mac and how to clear each item.
-
-<a id="faq"></a>
-
-## ❓ FAQ
-
-<details>
-<summary><b>Is it free?</b></summary>
-<br>SpeakSend is currently in testing, and there are no payments or in-app purchases in the app. Local models are free to download. If you connect an online AI service, that service may charge you under its own terms.
-</details>
-
-<details>
-<summary><b>Does it need an internet connection?</b></summary>
-<br>By default it uses the Apple Dictation built into macOS, and macOS decides whether that goes online. To go fully offline, download a local speech model (Whisper / Qwen3-ASR) and a local AI model once. After that, transcription and cleanup happen entirely on your Mac.
-</details>
-
-<details>
-<summary><b>Is my audio uploaded?</b></summary>
-<br>With local speech recognition and local AI selected, those tasks run on your Mac. When you use Apple Dictation, macOS determines whether it connects online. If you configure an online AI service, text is sent to that service for organization. See the privacy page in Settings for what is stored locally and how to clear it.
-</details>
-
-<details>
-<summary><b>Which macOS versions and languages are supported?</b></summary>
-<br>macOS 13 Ventura or later. The local Qwen3-ASR models need Apple silicon and macOS 14 or later. Speech recognition supports Simplified Chinese, Traditional Chinese and English, with automatic detection, and imported files can be set to mixed Chinese/English. The interface is available in Simplified Chinese, Traditional Chinese and English.
-</details>
-
-<details>
-<summary><b>Can I change the shortcut?</b></summary>
-<br>Yes. The default is <code>Fn</code>. In Settings → General you can switch to any key combo you like, and choose between "Hold to talk" and "Tap to toggle".
-</details>
+- **System Requirements**: `v0.1.1` is built natively for **Apple Silicon Macs (M1 / M2 / M3 / M4)** running **macOS 13 Ventura+** (`Qwen3-ASR` requires **macOS 14 Sonoma+**; Intel Mac users may use the earlier universal release on [Releases](https://github.com/KunZhang1997/SpeakSend/releases)).
+- **Signed & Notarized**: Developer ID signed and notarized by Apple (`11.7 MB`, no bundled model bloat).
 
 ---
 
-## 📄 License
+## 📄 License & Feedback
 
-SpeakSend is free to use. This repository publishes only installers, product information, and images; the source code is private. **You may not modify, redistribute, or use it commercially without the author's written permission**. Bug reports and suggestions are welcome in [Issues](https://github.com/KunZhang1997/SpeakSend/issues); external code contributions are not accepted. See [LICENSE](LICENSE) for the full terms and [NOTICE](NOTICE) for third-party components.
+SpeakSend is free to try during Early Access. This repository hosts official notarized installers, product documentation, and issue tracking; source code remains private. **Modification, redistribution, or commercial resale without prior written permission is prohibited.** Report bugs or share feedback via [Issues](https://github.com/KunZhang1997/SpeakSend/issues). See [LICENSE](LICENSE) and [NOTICE](NOTICE) for full terms.
 
-<p align="center"><sub>All content shown in screenshots is demo data.</sub></p>
+<p align="center"><sub>All meeting transcripts and notes shown in product visuals use fictional demo content.</sub></p>
