@@ -6,7 +6,7 @@
 Hold `Fn` to dictate clean text straight into any app, turn long meetings and spoken drafts into verifiable notes, and let months-old ideas automatically connect into a network.
 
 <p>
-  <a href="https://github.com/KunZhang1997/SpeakSend/releases/download/v0.1.5/SpeakSend-0.1.5.dmg"><strong>⬇️ Free Download · SpeakSend 0.1.5 (.dmg)</strong></a>
+  <a href="https://github.com/KunZhang1997/SpeakSend/releases/download/v0.1.6/SpeakSend-0.1.6.dmg"><strong>⬇️ Free Download · SpeakSend 0.1.6 (.dmg)</strong></a>
   &nbsp;·&nbsp; Early Access · No Sign-up · Unlimited On-Device Transcription
 </p>
 
@@ -42,7 +42,7 @@ Download free on-device `Qwen3-ASR` or `Whisper` speech models and pair with loc
 
 ### Download & Install
 
-- **Installer**: [**SpeakSend-0.1.5.dmg**](https://github.com/KunZhang1997/SpeakSend/releases/download/v0.1.5/SpeakSend-0.1.5.dmg) (Early Access · Full features unlocked for free)
+- **Installer**: [**SpeakSend-0.1.6.dmg**](https://github.com/KunZhang1997/SpeakSend/releases/download/v0.1.6/SpeakSend-0.1.6.dmg) (Early Access · Full features unlocked for free)
 - **Requirements**: Apple silicon Mac (M1 / M2 / M3 / M4), macOS 13.0+ (macOS 14.2+ for dual-channel meeting audio; macOS 14.0+ for Qwen3-ASR)
 - **Install**: Apple Developer ID signed & notarized. Open the `.dmg`, drag `SpeakSend.app` into `Applications`, and press `Fn` to start speaking.
 - **Feedback**: [GitHub Issues](https://github.com/KunZhang1997/SpeakSend/issues)
