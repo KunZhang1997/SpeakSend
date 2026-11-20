@@ -6,7 +6,7 @@
 短句按住 `Fn` 直输当前输入框；长会与随想留成结构化笔记，几个月前的旧点子还会自动连成网。
 
 <p>
-  <a href="https://kun97.tech/speaksend/releases/SpeakSend-0.1.12.dmg"><strong>⬇️ 免费下载 SpeakSend 0.1.12 (.dmg)</strong></a>
+  <a href="https://kun97.tech/speaksend/releases/SpeakSend-0.1.13.dmg"><strong>⬇️ 免费下载 SpeakSend 0.1.13 (.dmg)</strong></a>
   &nbsp;·&nbsp; 抢先体验版 · 免注册登录 · 本机识别不限时长
 </p>
 
@@ -47,7 +47,7 @@
 
 ### 下载与安装
 
-- **安装包下载**：[**SpeakSend-0.1.12.dmg（官网直下）**](https://kun97.tech/speaksend/releases/SpeakSend-0.1.12.dmg) · [GitHub 镜像](https://github.com/KunZhang1997/SpeakSend/releases/download/v0.1.12/SpeakSend-0.1.12.dmg)（当前免费开放完整功能）
+- **安装包下载**：[**SpeakSend-0.1.13.dmg（官网直下）**](https://kun97.tech/speaksend/releases/SpeakSend-0.1.13.dmg) · [GitHub 镜像](https://github.com/KunZhang1997/SpeakSend/releases/download/v0.1.13/SpeakSend-0.1.13.dmg)（当前免费开放完整功能）
 - **系统要求**：Apple 芯片 Mac（M1 / M2 / M3 / M4），macOS 13.0+（线上会议双端内录需 macOS 14.2+，Qwen3-ASR 本地模型需 macOS 14.0+）
 - **安装方式**：已通过 Apple Developer ID 签名与官方公证，打开 `.dmg` 将 `SpeakSend.app` 拖入 `Applications` 即可使用
 - **问题反馈**：[GitHub Issues](https://github.com/KunZhang1997/SpeakSend/issues)
